@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>jQuery.noConflict();</script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Cabin|PT+Sans+Narrow|Poppins|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <title>David Corey</title>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!--li><a>Project 3</a></li-->
+            <li><a href="#contact-title">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="title-block">
+            <h1 id="title">David Corey</h1>
+            <h3 id="sub-title">Programmer | Web Developer | Entrepeneur</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="anchor" id="about"><br><br><br><br></span>
+        <h2 >About Me</h2>
+        <div id="about-me">
+            <p>I am a sophomore at Brigham Young University studying Computer Science and Mathematics.
+                I have a passion for science and technology and believe that science, research and education can enrich
+                peoples lives and make a positive impact in the world. I am interested in systems software and robotics. I also do Web Development
+                and run a small Graphic Design business with my wife.
+                In my free time I like to be outdoors; hiking camping, and fishing as well as writing music and playing guitar.
+            </p>
+        </div>
+    </div>
+
+    <div class="container" id="resume-container">
+        <span class="anchor" id="resume"><br><br><br><br></span>
+        <h2>Resume</h2>
+        <a href="David_Corey_Resume.pdf" target="_blank"><img id="resume" src="resume.jpg" alt="Click to Download Resume"></a>
+    </div>
+
+    <div class="container" id="projects-container">
+        <span class="anchor" id="projects"><br><br><br><br></span>
+        <h2>Projects</h2>
+        <ol>
+            <li><a href="http://ec2-35-166-215-229.us-west-2.compute.amazonaws.com/Event_Invite/wedding.html" target="_blank">Wedding Invite</a></li>
+            <li><a href="https://www.khanacademy.org/computer-programming/virginia-is-for-lovers/5696484226433024" target="_blank">Visit Virginia</a></li>
+            <li><a href="https://www.khanacademy.org/computer-programming/davidcorey_pictureperfect/5814238136827904" target="_blank">Picture Perfect Trip</a></li>
+        </ol>
+    </div>
+
+    <span class="anchor" id="contact-title"><br><br><br><br></span>
+    <h2>Contact</h2>
+    <div class="container">
+        <img id="profile" src="profile2.jpg" alt="Profile Picture">
+        <div class="content" id="contact">
+            <p><span class="important">Email:</span> davidmatthewcorey@gmail.com</p>
+            <p><span class="important">Cell:</span> 801-472-1002</p>
+            <p><span class="important">GitHub:</span> <a href="http://github.com/dcorey28" target="_blank"> dcorey28</a></p>
+
+            <ul id="icons">
+                <li><a href="https://www.linkedin.com/in/davcore" target="_blank"><img src="linkedin.png"></a></li>
+                <li><a href="https://facebook.com" target="_blank"><img src="facebook.png"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="twitter.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="toTopWrapper">
+        <a href="#"><img class="toTop" src="toTop.png" alt="toTop"></a>
+    </div>
+
+    <!--img id="background" src="background.jpg" alt="A beautiful sunset hitting a deep lake."-->
+    <script>
+        jQuery(function()
+        {
+            jQuery(window).on('scroll', function()
+            {
+                if (jQuery(window).scrollTop() > 100)
+                {
+                    jQuery('.toTopWrapper').fadeIn();
+                }
+                else
+                {
+                    jQuery('.toTopWrapper').fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
